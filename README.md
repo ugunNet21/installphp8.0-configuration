@@ -24,6 +24,53 @@ blog to the most popular websites in the world. PHP is distributed under the
 The PHP manual is available at [php.net/docs](https://php.net/docs).
 
 ## Installation
+# Cara Mengkonfigurasi PHP di Windows 10-11
+
+1. **Download PHP:**
+   Unduh PHP dari [situs resmi](link_download_php) dan dalam tutorial ini, kita akan menggunakan PHP 8.0. Pilih opsi seperti yang ditunjukkan pada gambar:
+
+   ![Download PHP](link_gambar_download_php)
+
+2. **Ekstrak ke Direktori Path:**
+   Ekstrak file ZIP ke direktori path, misalnya `C:\src\php.8.0`.
+
+3. **Buat Environment Path:**
+   Buat environment path sesuai dengan direktori path pada langkah sebelumnya (`C:\src\php.8.0`). Lihat gambar untuk panduan.
+
+4. **Cek Versi PHP:**
+   Jalankan perintah `php -v` untuk memeriksa versi PHP yang telah diinstal. Hasilnya seharusnya sesuai dengan gambar yang diberikan.
+
+5. **Konfigurasi PHP:**
+   - Buka direktori path yang telah ditentukan pada langkah sebelumnya.
+   - Cari file `php.ini-development`, ubah namanya menjadi `php.ini`.
+   - Buka `php.ini` dengan menggunakan code editor (misalnya Notepad).
+   - Cari dan uncomment (hilangkan tanda ; di depan) file-file berikut:
+      ```ini
+      extension=curl
+      extension=fileinfo
+      extension=gd
+      extension=mbstring
+      extension=mysqli
+      extension=openssl
+      extension=pdo_mysql
+      ```
+   - Alternatifnya, tekan `Ctrl+F` untuk mencari salah satu dari extension tersebut dan hilangkan tanda ; dari awal barisnya.
+   - Terakhir, tambahkan direktori path PHP yang telah didaftarkan di environment, contohnya: `extension_dir = "C:\src\php8.0\ext"`. Tambahkan di antara daftar extension yang di-uncomment tadi. Pastikan direktori path-nya sesuai.
+
+6. **Buat File `phpinfo.php`:**
+   - Buat file `phpinfo.php` di dalam direktori path PHP (contoh: `C:\src\php.8.0`).
+   - Isi file tersebut dengan:
+      ```php
+      <?php
+      phpinfo();
+      ```
+
+7. **Selesai:**
+   - Jika diperlukan, instal Composer.
+   - Anda dapat menggunakan MAMP untuk Windows. XAMPP sering mengalami crash, tetapi ini terserah pilihan Anda. Jika menggunakan XAMPP, Anda tidak perlu menginstal PHP secara terpisah karena paketnya sudah lengkap. Anda hanya perlu menginstal Composer.
+
+> Catatan: Pastikan untuk mengganti [link_download_php] dan [link_gambar_download_php] dengan tautan yang sesuai.
+
 
 ### Prebuilt packages and binaries
 
