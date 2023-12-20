@@ -27,9 +27,9 @@ The PHP manual is available at [php.net/docs](https://php.net/docs).
 # Cara Mengkonfigurasi PHP di Windows 10-11
 
 1. **Download PHP:**
-   Unduh PHP dari [situs resmi](link_download_php) dan dalam tutorial ini, kita akan menggunakan PHP 8.0. Pilih opsi seperti yang ditunjukkan pada gambar:
+   Unduh PHP dari [situs resmi](https://www.php.net/downloads.php) dan dalam tutorial ini, kita akan menggunakan PHP 8.0. Pilih opsi seperti yang ditunjukkan pada gambar:
 
-   ![Download PHP](link_gambar_download_php)
+   ![Download PHP](https://www.php.net/downloads.php)
 
 2. **Ekstrak ke Direktori Path:**
    Ekstrak file ZIP ke direktori path, misalnya `C:\src\php.8.0`.
