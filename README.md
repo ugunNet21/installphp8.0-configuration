@@ -72,6 +72,9 @@ The PHP manual is available at [php.net/docs](https://php.net/docs).
 > Catatan: Pastikan untuk mengganti [link_download_php] dan [link_gambar_download_php] dengan tautan yang sesuai.
 
 
+```Syntax switch php
+ set PHP_BINARY=C:\src\php8.1\php.exe
+```
 ### Prebuilt packages and binaries
 
 Prebuilt packages and binaries can be used to get up and running fast with PHP.
